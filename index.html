@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" id="sign_in">
+        <div class="p-home">
+
+        <div class="p-contact" id="contacts">
+            <h1>User Login</h1>
+
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Username" required="true">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Password" required="true">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="check" type="checkbox" class="check" checked>
+					        <label for="check" id="rem_me"> Remember Me</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" placeholder="Send" value="Send">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="forgotpass"><a href="#">Forgot Password</a></span>
+                            <p id="para">New Here? <span class="red"><a href="#register" id="reg" onclick="myFunction()">Register</a></span></p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        </div>
+    </div>
+
+
+            <div id="register" class="container" style="display: none">
+            <div class="p-contact" >
+            <h1>User Registration</h1>
+
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Username" required="true">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Password" required="true">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Repeat Password" required="true">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Email Address" required="true">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="submit" placeholder="Sign Up" value="Send">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p id="reg2" style="margin-top: 20px;"><a href="#sign_in" onclick="myFunction()">Already a Member?</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+                </div>
+            </div>
+
+    
+<script>
+function myFunction() {
+    var w = document.getElementById('reg');
+	var x = document.getElementById('register');
+	var y = document.getElementById('reg2');
+	var z= document.getElementById('sign_in');
+
+    if (x.style.display === "none") {
+    x.style.display = "block";
+    z.style.display = "none"
+  } else if(z.style.display === "none"){
+    x.style.display = "none";
+    z.style.display = "block";
+  }
+    else{
+       z.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
