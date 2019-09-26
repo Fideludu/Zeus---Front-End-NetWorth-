@@ -1,112 +1,144 @@
+
 *{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-o-box-sizing: border-box;
 }
-@font-face{
-	font-family: "stop-d";
-	src:url(../fonts/STOPN.TTF);
-}
-@font-face{
-	font-family: "george";
-	src:url(../fonts/DUT766I.TTF);
-}
-@font-face{
-	font-family: "tozls";
-	src:url(../fonts/ALLURA-REGULAR.OTF);
-}
 body{
 	margin: 0;
 	width: auto;
 	height: auto;
-	background-image: url(../image/7.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-color:#ffffff
 
 }
 .container{
+    margin: 0 auto;
     text-align: center;
+	margin-top: 4.5em;
 
 }
-.p-home{
-	width: 100%;
-	height: 860px;
+#original{
+    margin-top: 0;
+}
+form h1{
+    font-family: PF DinText Pro;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #19A8BE;
+    text-align: left;
+}
+h2{
+    font-family: Sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 29px;
 
+    color: #BDBDBD;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: lighter;
 }
-.p-contact h1{
-	margin: 0;
-	padding: 10px;
-	text-align: center;
-	font-size: 45px;
-	font-weight: bold;
-	font-family: "tozls";
-	border-bottom: 2px solid #973F0E;
-	color: #fff;
-	text-shadow: 4px 2px 2px #000;
-}
-.p-contact form{
-    display: inline-block;
-	background-color: rgba(159, 165, 188, 0.3);
-	width: 600px;
-	padding:50px 100px 70px 110px;
-}
-#check{
-	width: 20px;
-	height: 20px;
-	float: left;
-	margin-top: 14px;
-}
-.p-contact form input{
-	width: 150px;
-	height: 45px;
-	font-size: 20px;
-	padding: 8px;
-	margin-top: 10px;
-	border-bottom: 2px solid #fff;
-	background-color: rgba(159, 165, 188, 0.3);
-	border-top-right-radius:5px;
-	border-top-left-radius: 5px;
-	color: #fff;
-	font-weight: bold;
-}
-.p-contact form input[type="text"]{
-	width: 360px;
+.form-group label{
+    text-align: left;
 }
 
-.p-contact form input[type="submit"]{
-	background-color:#B7233B;
-	color:#fff;
-	cursor:pointer;
-  	transition: background 0.3s ease-in-out;
-	margin-left: 200px;
+.input-label{
+    display: block;
+    float: left;
+    font-size: 10px;
+    line-height: 15px;
 }
-.p-contact form input[type="submit"]:hover {
-	background: #fff;
-	color:#B7233B;
-	border-bottom: 2px solid #B7233B;
+#main .form-control{
+    border: 1.5px solid #BDBDBD;
+    border-radius: 4px;
 }
-#rem_me{
-	float:left;
-	margin-top: 10px;
-}
-#forgotpass{
-	float: left;
-	margin-top: 50px;
-	font-size: small;
-}
-#forgotpass a, #reg2 a{
-	color: #000000;
-}
-#para{
-	float: right;
-	margin-right: 5px;
-	font-size: small;
-	margin-top: 50px;
+.form-control{
+    border: none;
+    border-bottom: 1px solid #19A8BE;
+    border-radius: 0;
 
 }
-.red, #reg{
-	color:#B7233B;
+
+#main label{
+
+    font-weight: 600;
+    font-size: 12px;
+}
+.btn-primary {
+    width: 315px;
+    height: 48px;
+    margin-top: 50px;
+
+    background: linear-gradient(90deg, #19A8BE 0.79%, #5EDEF1 100%);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+}
+#calc{
+    width: 100%;
+    height: 48px;
+}
+.my_btn #calc2{
+    color: #19A8BE;
+
+}
+.my_btn{
+    width: 186px;
+    height: 34px;
+    background: #FFFFFF;
+    border-radius: 11.5px;
+    margin-bottom: 15px;
+    padding: 1px;
+    color: #19A8BE;
+}
+a, a:hover, a:focus{
+    color: #19A8BE;
+}
+#main{
+    background-color: white;
+    width: 500px;
+    padding: 20px 50px;
+}
+.after_nav{
+    background-color: #E5E5E5;
+    width: 500px;
+    padding-top: 50px;
+}
+div.navbar{
+    background-color: #19A8BE !important;
+}
+
+#navtitle{
+    width: 200px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Sans-serif;
+    letter-spacing: 2px;
+}
+
+.after_nav h2{
+    text-align: left;
+    padding-top: 10px;
+}
+.after_nav h1{
+    text-align: left;
+    color: #19A8BE;
+}
+#total{
+    text-align: center;
+    font-size: 30px;
+}
+.splash{
+    margin: 0 auto;
+    width: 960px;
+    height: 510px;
+    background-image: url('../image/zeus_logo.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#home{
+    font-size: 24px;
 }

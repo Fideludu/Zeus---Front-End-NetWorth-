@@ -2,103 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login Page</title>
+    <title>Sign up & Login</title>
 
-	<meta name="viewport" content="width=device-width,user-scalable=no">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container" id="sign_in">
-        <div class="p-home">
+
 
         <div class="p-contact" id="contacts">
-            <h1>User Login</h1>
-
-            <form>
-                <table>
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Username" required="true">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Password" required="true">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input id="check" type="checkbox" class="check" checked>
-					        <label for="check" id="rem_me"> Remember Me</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="submit" placeholder="Send" value="Send">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span id="forgotpass"><a href="#">Forgot Password</a></span>
-                            <p id="para">New Here? <span class="red"><a href="#register" id="reg" onclick="myFunction()">Register</a></span></p>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-        </div>
-    </div>
 
 
-            <div id="register" class="container" style="display: none">
-            <div class="p-contact" >
-            <h1>User Registration</h1>
+            <form action="#" style="max-width:470px;margin:auto" class="mainpage" method="POST">
 
-            <form>
-                <table>
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Username" required="true">
-                        </td>
-                    </tr>
+                <h1>Sign in</h1>
+                <h2></h2>
+                <h2>Welcome back</h2>
+                <br><br><br>
 
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Password" required="true">
-                        </td>
-                    </tr>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="input-label">Email </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="johndoe@mail.com">
 
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Repeat Password" required="true">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Email Address" required="true">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="submit" placeholder="Sign Up" value="Send">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p id="reg2" style="margin-top: 20px;"><a href="#sign_in" onclick="myFunction()">Already a Member?</a></p>
-                        </td>
-                    </tr>
-                </table>
-            </form>
                 </div>
-            </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="input-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="************">
+                </div>
+
+                    <button type="submit" class="btn btn-primary">SIGN IN</button>
+                    <p></p>
+
+                    <p id="para">Don't have an account? <span class="red"><a href="#register" id="reg" onclick="myFunction()">Sign up</a></span></p>
+
+            </form>
+        </div>
+        </div>
+
+
+
+        <div id="register" class="container" style="display: none">
+
+
+
+            <form action="#" style="max-width:470px;margin:auto" class="mainpage" method="POST">
+                <h1>Sign up</h1>
+                <h2>Create an account and get Started</h2>
+                <br><br><br>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="input-label">First Name</label>
+                    <input type="text" class="form-control" id="" placeholder="John">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="input-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="input-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="johndoe@mail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="input-label">Phone no</label>
+                    <input type="number" class="form-control" id="" placeholder="090 123 45678">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="input-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="************">
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary">SIGN UP</button>
+
+                <p id="reg2" style="margin-top: 20px;">Already a Member?<a href="#sign_in" onclick="myFunction()">Sign in</a></p>
+
+            </form>
+        </div>
+
 
     
 <script>
